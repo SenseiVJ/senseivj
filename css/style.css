@@ -35,7 +35,7 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .overlay {
@@ -44,11 +44,13 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/bg-pattern.png');
+    background-image: url(https://senseivj.com/wp-content/uploads/2022/07/bg-pattern.png);
     background-position: center;
     background-size: 15px;
     background-repeat: repeat;
+    mix-blend-mode: overlay;
 }
+
 
 .showcase {
     position: relative;
