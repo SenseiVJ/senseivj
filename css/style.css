@@ -1,3 +1,9 @@
+/* https://senseivj.com/wp-content/uploads/2022/07/sensei-logo-small.png */
+/* https://senseivj.com/wp-content/uploads/2022/07/sensei-logo-large.png */
+/* https://senseivj.com/wp-content/uploads/2022/07/sensei-logo-medium.png */
+/* https://senseivj.com/wp-content/uploads/2022/07/sensei-website-bg.mp4 */
+
+/* RESET */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,20 +12,19 @@
 }
 
 html {
-    font-size: 62.5%;
-    background-color: black;
+    font-size: 81.25%;
 }
 
 .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     right: 0;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
-    padding: 10rem;
-    justify-content: space-between;
-    align-items: center;
-    background: #111;
-    transition: 0.5s;
     z-index: 2;
 }
 
@@ -39,58 +44,45 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: #faaf3b  /* url(./images/pattern.png); */;
-    background-image: url('./images/pattern.png');
+    background-image: url('../images/bg-pattern.png');
     background-position: center;
-    mix-blend-mode: overlay;
+    background-size: 15px;
+    background-repeat: repeat;
 }
 
 .showcase {
     position: relative;
-    margin: 5rem;
-    z-index: 10;
-}
-
-.showcase img {
-    width: 25em;
-    filter: invert();
-}
-
-.showcase h1 {
-    font-size: medium;
-    font-weight: 800;
+    margin: 0 2rem;
     color: #fff;
-    line-height: 5rem;
 }
 
-.showcase p {
-    font-size: small;
-    color: #fff;
-    margin: 2rem 0;
-    font-weight: 400;
-    max-width: 50rem;
+.showcase-logo img {
+    margin-top: 3rem;
+    width: 50%;
+    filter: invert(1);
+}
+
+.showcase-slogan h1 {
+    line-height: 2em;
+}
+
+.showcase-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.1em;
+    width: 70%;
 }
 
 .menu {
-    position: absolute;
-    z-index: 10;
-    bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu ul {
     position: relative;
+    margin-top: 3rem;
 }
 
 .menu ul li {
-    list-style: none;
-    display: inline;
+    display:inline-block;
 }
 
 .menu ul li a {
-    text-decoration: none;
-    font-size: 3rem;
     color: #fff;
+    text-decoration: none;
 }
